@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations for {{ movie }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Recommended Movies Similar to "{{ movie }}"</h2>
+        {% if recommendations %}
+            <ul>
+                {% for rec in recommendations %}
+                    <li>{{ rec }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No recommendations found. Try another movie.</p>
+        {% endif %}
+        <a href="/">Search Again</a>
+    </div>
+</body>
+</html>
+
+
