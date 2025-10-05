@@ -1,9 +1,7 @@
-/* static/style.css */
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #18122B; /* deep dark violet */
+    color: #F6C1CB;            /* light pink */
     margin: 0;
     padding: 0;
 }
@@ -13,37 +11,47 @@ body {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #231942;   /* rich dark violet */
+    border-radius: 8px;
+    box-shadow: 0 2px 16px rgba(60,0,50,0.25);
     text-align: center;
 }
 
 h1, h2 {
-    color: #007BFF;
+    color: #FF6FBB;         /* bright pink */
 }
 
 input[type="text"] {
     width: 70%;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #FFB5DA; /* light pink border */
+    background-color: #2D1436;
+    color: #F6C1CB;
     border-radius: 4px;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+input[type="text"]::placeholder {
+    color: #FFB5DA;
+    opacity: 0.8;
 }
 
 button {
     padding: 10px 20px;
     font-size: 1rem;
-    background-color: #007BFF;
-    color: white;
+    background: linear-gradient(90deg, #FF6FBB 0%, #A347BA 100%);
+    color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin-left: 10px;
+    transition: background 0.2s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(90deg, #A347BA 0%, #FF6FBB 100%);
 }
 
 ul {
@@ -53,15 +61,17 @@ ul {
 
 li {
     padding: 8px 0;
-    font-size: 1.1rem;
-    border-bottom: 1px solid #ddd;
+    font-size: 1.15rem;
+    border-bottom: 1px solid #3D2C54;
 }
 
 a {
-    color: #007BFF;
+    color: #FF6FBB;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
 a:hover {
+    color: #F6C1CB;
     text-decoration: underline;
 }
